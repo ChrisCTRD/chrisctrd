@@ -1,22 +1,38 @@
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
+    const translations = {
+        en: {
+            "welcome": "Heya! I'm ChrisCTRD!",
+            "description": "I'm a random artist on the internet. Welcome to my page!",
+            "comms_status": "Commissions Status: OPEN",
+            "select_language": "Select your language:",
+            "skills": "Digital Ilustrator | Artist | Clip Studio Paint EX | IbisPaint",
+            "join_discord": "Join My Discord Server",
+            "contact": "Contact me through Discord or Twitter.",
+            "copyright": "© ChrisCTRD. All Rights are reserved.",
+            "portArt": "Art",
+            "portArtText": "I'm a random freelancer artist on the internet who draws in anime style."
+        },
+        pt: {
+            "welcome": "Heya! Sou ChrisCTRD!",
+            "description": "Sou um artista aleatório na internet. Bem-vindo à minha página!",
+            "comms_status": "Status de Comissões: ABERTO",
+            "select_language": "Escolha sua língua:",
+            "skills": "Ilustrador Digital | Artista | Clip Studio Paint EX | IbisPaint",
+            "contact": "Entre em contato pelo Discord ou Twitter.",
+            "join_discord": "Entre No Servidor Do Discord",
+            "copyright": "© ChrisCTRD. All Rights are reserved.",
+            "portArt": "Arte",
+            "portArtText": "Sou um artista freelancer aleatório na internet que desenha no estilo anime."
+        }
+    };
+
     const currentLang = localStorage.getItem('language') || 'en';
     
-    async function loadTranslation(lang) {
-        try {
-            const response = await fetch(`/translations/${lang}.json`);
-            return await response.json();
-        } catch (error) {
-            console.error("Erro ao carregar tradução:", error);
-            return {};
-        }
-    }
-
-    async function applyTranslations(lang) {
-        const translations = await loadTranslation(lang);
+    function applyTranslations(lang) {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[key]) {
-                el.textContent = translations[key];
+            if (translations[lang] && translations[lang][key]) {
+                el.textContent = translations[lang][key];
             }
         });
         
@@ -26,9 +42,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById(lang === 'en' ? 'english' : 'portuguese').classList.add('active');
     }
 
-    window.changeLanguage = async (lang) => {
+    window.changeLanguage = (lang) => {
         localStorage.setItem('language', lang);
-        await applyTranslations(lang);
+        applyTranslations(lang);
         
         const pages = ['index', 'tos', 'portfolio', 'commissions'];
         pages.forEach(page => {
@@ -37,6 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
     };
-    await applyTranslations(currentLang);
-    fetch(`${window.location.origin}/translations/en.json`)
+
+    applyTranslations(currentLang);
 });
