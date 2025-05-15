@@ -1,0 +1,5 @@
+/assets/* /assets/:splat 200
+/translations/* /translations/:splat 200
+Content-Type: application/json
+
+/* /index.html 200

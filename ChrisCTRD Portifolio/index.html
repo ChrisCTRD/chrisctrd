@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChrisCTRD Commissions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="Images/ChrisCTRD/ChrisHeadIcon.png" type="image/x-icon">
+    <link rel="preload" href="Images/hexbg.png" as="image" importance="high">
+</head>
+<body id="bg">
+    <div id="borderHead">
+        <header class="mainBar">
+            <img id="logo" src="Images/ChrisCTRD/chrisctrd-logo.png" alt="ChrisCTRD Logo">
+            <br>
+            <ul>
+                <li><a href="index.html" class="btn" id="home"><img id="homeIcon" src="Images/Icons/house-fill.svg" alt="home">Home</a></li>
+                <li><a href="commissions.html" class="btn" id="commissions"><img id="commsIcon" src="Images/Icons/brush-fill.svg" alt="brush">Commissions</a></li>
+                <li><a href="tos.html" class="btn" id="tos"><img id="tosIcon" src="Images/Icons/list-ul.svg" alt="list">TOS</a></li>
+                <li><a href="portifolio.html" class="btn" id="portifolio"><img id="portIcon" src="Images/Icons/image.svg" alt="image">Portfolio</a></li>
+            </ul>
+            <div class="custom-bar" id="whiteBar"></div>
+        </header>
+    </div>
+    <section id="borderMain">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img id="Chrisicon" src="Images/ChrisCTRD/chrisicon.png" alt="ChrisCTRD Icon">
+                    <h2 id="purpleText" data-i18n="welcome"></h2>
+                    <p id="titleText" data-i18n="description"></p>
+                </div>
+                <div class="col-sm-6">
+                    <br><br>
+                    <h4 id="langtext" data-i18n="select_language"></h4>
+                    <div class="language">
+                        <ul>
+                            <li><button id="english" class="btn" onclick="changeLanguage('en')">English</button></li>
+                            <li><button id="portuguese" class="btn" onclick="changeLanguage('pt')">Português</button></li>
+                        </ul>
+                    </div>
+                    <div id="homeDiv">
+                        <h4 id="comms" data-i18n="comms_status"></h4>
+                        <p id="contact" data-i18n="contact"></p>
+                        <div class="custom-bar" id="whiteBar"></div>
+                        <p id="smalltext" data-i18n="skills"></p>
+                        <div class="social-container">
+                            <div id="blueI">
+                                <a href="https://x.com/ChrisCTRD26"><img id="iconBlue" src="Images/Icons/twitter-blue.png" alt="Twitter Icon"></a>
+                                <a href="https://bsky.app/profile/chrisctrd.bsky.social"><img id="iconBlue" src="Images/Icons/bluesky-blue.png" alt="Bluesky Icon"></a>
+                                <a href="https://www.instagram.com/chrisctrd26"><img id="iconBlue" src="Images/Icons/instagram-blue.png" alt="Instagram Icon"></a>
+                                <a href="https://ko-fi.com/chrisctrd"><img id="iconBlue" src="Images/Icons/ko-fi-blue.png" alt="Ko-fi Icon"></a>
+                                <a href="https://www.pixiv.net/en/users/100712370"><img id="iconBlue" src="Images/Icons/pixiv-blue.png" alt="Pixiv Icon"></a>
+                            </div>
+                        </div>
+                        <div class="discord-container">
+                            <ul>
+                                <li><a href="https://discord.gg/zD76qyqzEz" class="btn" id="discord" target="_blank" rel="noopener noreferrer"><img id="ArrowIcon" src="Images/Icons/check2.svg" alt="check"><span data-i18n="join_discord"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="borderFoot">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <img id="logo" src="Images/ChrisCTRD/chrisctrd-logo-black.png" alt="ChrisCTRD Logo Black">
+                    <div>
+                        <a href="https://x.com/ChrisCTRD26"><img id="iconB" src="Images/Icons/twitter.png" alt="Twitter Icon"></a>
+                        <a href="https://www.youtube.com/@ChrisCTRD"><img id="iconB" src="Images/Icons/youtube.png" alt="Youtube Icon"></a>
+                        <a href="https://www.instagram.com/chrisctrd26"><img id="iconB" src="Images/Icons/instagram.png" alt="Instagram Icon"></a>
+                        <a href="https://www.twitch.tv/chrisctrd"><img id="iconB" src="Images/Icons/twitch.png" alt="Twitch Icon"></a>
+                        <a href="https://www.pixiv.net/en/users/100712370"><img id="iconB" src="Images/Icons/pixiv.png" alt="Pixiv Icon"></a>
+                        <a href="https://bsky.app/profile/chrisctrd.bsky.social"><img id="iconB" src="Images/Icons/bluesky.png" alt="Bluesky Icon"></a>
+                        <a href="https://ko-fi.com/chrisctrd"><img id="iconB" src="Images/Icons/kofi.png" alt="Ko-fi Icon"></a>
+                        <a href="https://discord.gg/zD76qyqzEz"><img id="iconB" src="Images/Icons/discord.png" alt="Discord Icon"></a>
+                    </div>
+                    <div class="custom-bar" id="Barfoot"></div>
+                    <h6 data-i18n="copyright"></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scripts/lang.js"></script>
+</body>
+</html>
