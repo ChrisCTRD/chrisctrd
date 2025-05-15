@@ -1,25 +1,25 @@
 {
-  "redirects": [
+  "rewrites": [
     {
-      "src": "/home",
-      "dest": "/index.html"
+      "source": "/home",
+      "destination": "/index.html"
     },
     {
-      "src": "/commissions",
-      "dest": "/commissions.html"
+      "source": "/commissions",
+      "destination": "/commissions.html"
     },
     {
-      "src": "/portfolio",
-      "dest": "/portfolio.html"
+      "source": "/portfolio",
+      "destination": "/portfolio.html"
     },
     {
-      "src": "/tos",
-      "dest": "/tos.html"
+      "source": "/tos",
+      "destination": "/tos.html"
     },
     {
-      "src": "/(.*)",
+      "source": "/(.*)",
       "status": 404,
-      "dest": "/404.html"
+      "destination": "/404.html"
     }
   ],
   "cleanUrls": true
