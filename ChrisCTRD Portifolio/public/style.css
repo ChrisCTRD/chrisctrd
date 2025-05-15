@@ -1,0 +1,528 @@
+#bg {
+    background-image: url(Images/hexbg.png);
+    background-size: auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    content-visibility: auto;
+    contain: paint;
+    position: static;
+    width: auto;
+    height: auto;
+    z-index: auto;
+    transform: translate3d(0, 0, 0);
+    isolation: isolate;
+    animation: none !important;
+    transition-property: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-attachment: local;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #211D2B;
+    border-left: 1px solid #8000FF;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 8px;
+    border: 3px solid #211D2B;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(207, 207, 207);
+}
+  
+
+@keyframes ButtonColor {
+    from {color: #FAB400;}
+    to {color: #FAB400;}
+}
+
+@keyframes fadeInMove {
+    from {opacity: 0;
+        top: 10vh; }
+    to {opacity: 1; 
+        top: 0;}
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Fonts/Inter_18pt-Medium.ttf);
+}
+
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#borderHead {
+    background-color: #211D2B;
+    border: 2px solid #8000FF;
+    border-radius: 5vh;
+    width: 80%;
+    text-align: left;
+    margin-top: 50px;
+    position: relative;
+    opacity: 1;
+    margin-left: 10%;
+    animation: fadeInMove 1s ease-in-out normal forwards;
+}
+
+header {
+    background-color: #211D2B;
+    border-radius: 5vh;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    opacity: 1;
+    margin-left: 10%;
+}
+
+#logo {
+    float: center;
+    padding: auto;
+    width: 30vh;
+    max-width: 30vh;
+    text-align: center;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    #logo {
+        width: 45vh;
+        max-width: 45vh;
+    }
+}
+
+#whiteBar {
+    color: white;
+    display: block;
+    width: 100%;
+    border-style: inset;
+    border: 1px solid white;
+}
+
+.mainBar {
+    background-color: #211D2B;
+}
+
+
+.mainBar::after {
+    display: block;
+}
+
+.mainBar ul {
+    padding: 2vh;
+}
+
+.mainBar ul li {
+    display: inline;
+}
+
+.mainBar ul li a.btn {
+    font-family: Inter;
+    display: inline-block;
+    color: black;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 10vh;
+    border: 2px solid #594C7D;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+  
+.mainBar ul li a.btn:hover {
+    background: #FAB400;
+    color: black;
+}
+  
+.mainBar ul li a.btn:active {
+    background-color: #8000FF;
+    color: white;
+}
+
+.btn:not(:disabled):not(.disabled):active {
+    background-image: none !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#home {
+    min-width: 14vh;
+    width: auto;
+}
+
+#homeIcon {
+    margin-top: 4px;
+    margin-right: 2px;
+    float: left;
+}
+
+#commissions {
+    min-width: 20vh;
+    width: auto;
+}
+
+#commsIcon {
+    margin-top: 4px;
+    margin-right: 1px;
+    float: left;
+}
+
+#portifolio {
+    min-width: 16vh;
+    width: auto;
+}
+
+#portIcon {
+    margin-top: 4px;
+    margin-right: 1px;
+    float: left;
+}
+
+#tos {
+    min-width: 11vh;
+    width: auto;
+}
+
+#tosIcon {
+    margin-top: 5px;
+    margin-right: 2px;
+    float: left;
+}
+
+section {
+    font-family: Inter;
+    background-color: #211D2B;
+    border: 2px solid #8000FF;
+    border-radius: 5vh;
+    width: 80%;
+    text-align: left;
+    margin-top: 10px;
+    position: relative;
+    opacity: 0;
+    margin-left: 10%;
+    animation: fadeInMove 1s ease-in-out 0.7s normal forwards;
+}
+
+#borderMain {
+    opacity: 0;
+    animation: fadeInMove 0.8s ease-in-out 0.5s normal forwards;
+}
+
+#purpleText {
+    text-align: center;
+    color: #665dcd;
+    font-weight: bold;
+}
+
+.custom-bar {
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 10px 0;
+}
+
+#Chrisicon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 3vh 0;
+    width: 40vh;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 100%;
+}
+
+#normalText {
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: 3vh;
+}
+
+#titleText {
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: 3vh;
+}
+
+#langtext {
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: 3vh;
+}
+
+#borderFoot {
+    font-family: Inter;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position: flex;
+    margin-left: 0%;
+    float: center;
+    font-size: 0;
+    animation: fadeInMove 1s ease-in-out;
+}
+
+#Barfoot {
+    width: 100%;
+    color: black;
+    display: block;
+    border-style: inset;
+    border: 1px solid black;
+}
+
+#iconB {
+    size-adjust: 1vh;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.33%;
+    width: 10vh;
+    height: 10vh;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+h6 {
+    color: black;
+    opacity: 1;
+    font-weight: bolder;
+    font-family: Inter;
+    font-size: 1rem;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+
+.language ul {
+  padding: 2vh;
+  margin: 0;
+  text-align: center;
+}
+
+.language ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.language .btn {
+  font-family: Inter;
+  color: #8000FF;
+  background: transparent;
+  border: 2px solid #8000FF;
+  border-radius: 10vh;
+  padding: 8px 16px;
+  font-size: 2.5vh;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+
+.language .btn:hover {
+  color: #FAB400;
+  border-color: #FAB400;
+  transform: scale(1.05);
+}
+
+.language .btn.active {
+  background-color:  #FAB400;
+  color: white !important;
+  border-color:  #FAB400;
+}
+
+#portuguese {
+    margin-top: 1vh;
+    width: fit-content;
+    max-width: 22vh;
+}
+
+#english {
+    margin-top: 1vh;
+    width: fit-content;
+    max-width: 22vh;
+}
+
+#comms {
+    margin-top: 1vh;
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+#contact {
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: 3vh;
+}
+
+#smalltext {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+}
+
+#blueI {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
+#iconBlue {
+    size-adjust: 1vh;
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 0.66%;
+    max-width: 15vh;
+    max-height: 8vh;
+    position: relative;
+    border: 1px solid #0027d3;
+    border-radius: 100%;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+#homeDiv {
+    max-width: auto;
+    max-height: 100%;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.discord-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 2vh auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.discord-container a#discord {
+    font-size: larger;
+    font-family: Inter;
+    display: inline-block;
+    color: black;
+    background: white;
+    text-align: center;
+    width: auto;
+    min-width: 290px;
+    max-width: 100%;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10vh;
+    border: 2px solid #594C7D;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .discord-container {
+    padding: 0 10px;
+  }
+  
+  .discord-container a#discord {
+    min-width: 180px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 768px) {
+  #discord {
+    min-width: 180px;
+    padding: 8px 16px;
+    font-size: medium;
+  }
+}
+
+.discord-container a#discord:hover {
+  background: #FAB400;
+  color: black;
+  border: 2px solid #594C7D;
+}
+
+#discord-container a#discord:active {
+    background-color: #8000FF !important;
+    color: black !important;
+    opacity: 1;
+    box-shadow: none !important;
+    border: 2px solid #594C7D;
+}
+ 
+#discord-container a#discordbutton:focus {
+    background-color: #FAB400;
+    box-shadow: 0 0 0 2px #594C7D !important;
+    outline: none !important;
+}
+
+#ArrowIcon {
+    margin-top: 4px;
+    margin-right: 1px;
+    float: left;
+}
+
+@font-face {
+    font-family: DelaGoth;
+    src: url(Fonts/DelaGothicOne-Regular.ttf);
+}
+
+#portTitle {
+    text-align: center;
+    margin-top: 1vh;
+    font-family: DelaGoth;
+    color: aliceblue;
+}
+
+#portText {
+    text-align: center;
+    margin-top: 1vh;
+    font-family: Inter;
+    color: rgb(255, 255, 255);
+}
