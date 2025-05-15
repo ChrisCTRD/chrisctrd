@@ -1,5 +1,5 @@
 {
-  "routes": [
+  "redirects": [
     {
       "src": "/home",
       "dest": "/index.html"
