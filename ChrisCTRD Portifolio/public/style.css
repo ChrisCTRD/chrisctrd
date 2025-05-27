@@ -22,7 +22,6 @@ html {
 body {
     min-height: 100vh;
     background-attachment: local;
-    overflow: overlay;
 }
 
 ::-webkit-scrollbar {
@@ -31,13 +30,14 @@ body {
 }
   
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background: #211D2B;
+    border-left: 1px solid #8000FF;
 }
   
 ::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 8px;
-    border: 3px solid #222;
+    border: 3px solid #211D2B;
 }
   
 ::-webkit-scrollbar-thumb:hover {
